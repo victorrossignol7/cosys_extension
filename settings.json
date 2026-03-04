@@ -1,0 +1,144 @@
+{
+    "SettingsVersion": 2.0,
+    "SimMode": "Heterogeneous",
+    "ClockType": "ScalableClock",
+    "ClockSpeed": 1,
+    "EnableRpc": true,
+    "LocalHostIp": "127.0.0.1",
+    "ApiServerPort": 41451,
+
+    "ViewMode": "GroundObserver",
+    "OriginGeopoint": {
+        "Latitude": 43.6108,
+        "Longitude": 3.8767,
+        "Altitude": 50
+    },
+    "Vehicles": {
+        "Drone1": {
+            "VehicleType": "SimpleFlight",
+            "X": 0,
+            "Y": 0,
+            "Z": -6,
+            "Cameras": {
+                "front_center": {
+                    "X": 0.2,
+                    "Y": 0.0,
+                    "Z": 0.0,
+                    "Pitch": 0,
+                    "Roll": 0,
+                    "Yaw": 0,
+                    "CaptureSettings": [
+                        {
+                            "ImageType": 0,
+                            "Width": 640,
+                            "Height": 480,
+                            "FOV_Degrees": 90
+                        },
+                        {
+                            "ImageType": 2,
+                            "Width": 640,
+                            "Height": 480,
+                            "FOV_Degrees": 90
+                        }
+                    ]
+                }
+            },
+            "Sensors": {
+                "Imu": {
+                    "SensorType": 2,
+                    "Enabled": true
+                },
+                "Gps": {
+                    "SensorType": 3,
+                    "Enabled": true
+                },
+                "Barometer": {
+                    "SensorType": 1,
+                    "Enabled": true
+                },
+                "Magnetometer": {
+                    "SensorType": 4,
+                    "Enabled": true
+                },
+                "Lidar1": {
+                    "SensorType": 6,
+                    "Enabled": true,
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 0.0,
+                    "Roll": 0,
+                    "Pitch": 0,
+                    "Yaw": 0,
+                    "NumberOfChannels": 16,
+                    "PointsPerSecond": 20000,
+                    "RotationsPerSecond": 10,
+                    "HorizontalFOVStart": -180,
+                    "HorizontalFOVEnd": 180,
+                    "VerticalFOVUpper": 10,
+                    "VerticalFOVLower": -10
+                }
+            }
+        },
+        "UGV1": {
+            "VehicleType": "CPHusky",
+            "X": 0,
+            "Y": 2,
+            "Z": 0,
+            "Cameras": {
+                "front_center": {
+                    "X": 0.3,
+                    "Y": 0.0,
+                    "Z": 0.4,
+                    "Pitch": 0,
+                    "Roll": 0,
+                    "Yaw": 0,
+                    "CaptureSettings": [
+                        {
+                            "ImageType": 2,
+                            "Width": 640,
+                            "Height": 480,
+                            "FOV_Degrees": 90
+                        }
+                    ]
+                }
+            },
+            "Sensors": {
+                "Imu": {
+                    "SensorType": 2,
+                    "Enabled": true
+                },
+                "Gps": {
+                    "SensorType": 3,
+                    "Enabled": true
+                },
+                "Lidar1": {
+                    "SensorType": 6,
+                    "Enabled": false,
+                    "X": 0.2,
+                    "Y": 0.0,
+                    "Z": 0.5,
+                    "Roll": 0,
+                    "Pitch": 0,
+                    "Yaw": 0,
+                    "NumberOfChannels": 16,
+                    "PointsPerSecond": 20000,
+                    "RotationsPerSecond": 10,
+                    "HorizontalFOVStart": -180,
+                    "HorizontalFOVEnd": 180,
+                    "VerticalFOVUpper": 10,
+                    "VerticalFOVLower": -10
+                }
+            }
+        }
+    },
+    "DefaultVehicle": "UGV1",
+    "CameraDirector": {
+        "FollowDistance": -18,
+        "X": -8,
+        "Y": 6,
+        "Z": -10,
+        "Pitch": -25,
+        "Roll": 0,
+        "Yaw": 0
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "SettingsVersion": 2.0,
+    "SimMode": "Multirotor",
+    "Vehicles": {
+        "Drone1": {
+            "VehicleType": "SimpleFlight",
+            "AutoCreate": true
+        }
+    }
+}
